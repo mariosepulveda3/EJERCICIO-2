@@ -1,9 +1,16 @@
-h1 {
+.estilo-1 {
     
     color: blue
 }
 
-.color2 {
+.estilo-2 {
     color: gray;
 }
 
+header {
+    text-align: center;
+  }
+
+footer  {
+    text-align: right;
+  }
