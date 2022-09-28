@@ -1,3 +1,8 @@
+.fuente {
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .estilo-1 {
     
     color: blue
@@ -7,14 +12,31 @@
     color: gray;
 }
 
-.background-blue {
-    background-color: rgb(221, 221, 255);
+.margenp {
+
+    margin: 0px 300px 20px 750px;
+
+}
+.contenedor {
+    background-color: rgb(129, 175, 238);
+    background-position: center;
+    background-size: cover;
+    margin: 0px 300px 0px 700px;
 }
 
 header {
     text-align: center;
+    
   }
 
 footer  {
-    text-align: center;
+    margin: 0px 700px 0px 300px;
   }
+
+.center {
+    text-align: center;
+}
+
+.margen {
+    margin: -50px 0px 0px 0px
+}
