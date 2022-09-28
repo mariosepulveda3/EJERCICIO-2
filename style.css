@@ -7,6 +7,10 @@
     color: gray;
 }
 
+.background-blue {
+    background-color: rgb(221, 221, 255);
+}
+
 header {
     text-align: center;
   }
