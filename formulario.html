@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-            <h1 class="estilo-1" class="text-right" class="fuente">Bienvenido a Billabong</h1>
-        </header>
-        <div>
-            <img class="margen" src="https://www.adhesivosnatos.com/wp-content/uploads/2016/11/pegatina-billabong-logo-vinilo.png" width=200px height=200px>
-            <p class="margenp">Registrate a continuación para recibir las mejores ofertas!</p>
-        </div>
+      <h1 class="estilo-1" class="text-right" class="fuente">
+        Bienvenido a Billabong
+      </h1>
+    </header>
+    <div>
+      <img
+        class="margen"
+        src="https://www.adhesivosnatos.com/wp-content/uploads/2016/11/pegatina-billabong-logo-vinilo.png"
+        width="200px"
+        height="200px"
+      />
+      <p class="margenp">
+        Registrate a continuación para recibir las mejores ofertas!
+      </p>
+    </div>
     <main>
-        <form class="contenedor" action="/next-page" method="post">
-            <fieldset>
-                <h3>Resgistro</h3>
-                <div>
-                        <p>Correo Electrónico</p>
-                        <input type="mail" name="mail" placeholder="Mail" required>
-                        <p>Nombre de Usuario</p>
-                        <input type="text" name="name" placeholder="Usuario" required>
-                        <p>Contraseña</p>
-                        <input type="password" required>
-                        <ul>
-                            <li class="estilo-2">Mínimo 5 caracteres</li>
-                        </ul>
-                        <p><strong>Clica a continuación para completar el registro</strong></p>
-                    <button type="submit">Enviar</button>
-                </div>
-            </fieldset>
-        </form>
+      <form class="contenedor" action="/next-page" method="post">
+        <fieldset>
+          <h3>Resgistro</h3>
+          <div>
+            <p>Correo Electrónico</p>
+            <input type="mail" name="mail" placeholder="Mail" required />
+            <p>Nombre de Usuario</p>
+            <input type="text" name="name" placeholder="Usuario" required />
+            <p>Contraseña</p>
+            <input
+              type="password"
+              pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+              required
+            />
+            <ul>
+              <li class="estilo-2">Mínimo 8 caracteres</li>
+              <li class="estilo-2">Incluye una mayúscula</li>
+              <li class="estilo-2">Incluye una minúscula</li>
+              <li class="estilo-2">Incluye un número</li>
+              <li class="estilo-2">incluye un carácter</li>
+            </ul>
+            <p>
+              <strong>Clica a continuación para completar el registro</strong>
+            </p>
+            <button type="submit">Enviar</button>
+          </div>
+        </fieldset>
+      </form>
     </main>
     <footer>
-            <p>Descubre las mejores prendas</p><span><a href="https://www.billabong.es/">Billabong</a></span>
+      <p>Descubre las mejores prendas</p>
+      <span><a href="https://www.billabong.es/">Billabong</a></span>
     </footer>
-</body>
+  </body>
 </html>
